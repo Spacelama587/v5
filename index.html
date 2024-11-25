@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Leaderboard - Pastel Grid Design</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .header h1 {
+            font-size: 3rem;
+            font-weight: 300;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .header p {
+            font-size: 1rem;
+            color: #7f8c8d;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+        .grid-item {
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.07);
+            transition: transform 0.3s ease;
+        }
+        .grid-item:hover {
+            transform: translateY(-10px);
+        }
+        .grid-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .grid-content {
+            padding: 25px;
+        }
+        .grid-content h2 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        .grid-content p {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+        }
+        .grid-item:nth-child(1) { background-color: #e8f5e9; }
+        .grid-item:nth-child(2) { background-color: #e3f2fd; }
+        .grid-item:nth-child(3) { background-color: #fff3e0; }
+        .grid-item:nth-child(4) { background-color: #f3e5f5; }
+
+        @media (max-width: 1024px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 600px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>AI Leaderboard</h1>
+            <p>CleverFeed's MeritChat AI ranks the quality of your participation in discussions.</p>
+        </header>
+
+        <div class="grid">
+            <div class="grid-item">
+                <img src="https://img.freepik.com/premium-vector/hand-line-art-writing-paper-hand-gesture-illustration_353893-289.jpg?w=740" alt="Write Statements" class="grid-image">
+                <div class="grid-content">
+                    <h2>Write Compelling Statements</h2>
+                    <p>The AI engine reads your comments and evaluates how compelling, thoughtful or otherwise impressive they are. Each contribution is analyzed for depth, originality, and impact on the discussion.</p>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <img src="https://thumbs.dreamstime.com/z/emotional-control-black-line-icon-ability-to-respond-ongoing-demands-experience-range-emotions-pictogram-web-page-179967638.jpg?w=768" alt="Receive Responses" class="grid-image">
+                <div class="grid-content">
+                    <h2>Receive Responses</h2>
+                    <p>When someone responds to your comments, the AI engine evaluates that response to further learn the value of your comment. If you cause someone's opinion to evolve, MeritChat AI takes note and adjusts your influence score accordingly.</p>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <img src="https://thumbs.dreamstime.com/z/minimalist-line-art-vector-business-meeting-five-professionals-one-presenting-document-engaged-dynamic-discussion-326517083.jpg?ct=jpeg" alt="Engage in Discussions" class="grid-image">
+                <div class="grid-content">
+                    <h2>Engage in Discussions</h2>
+                    <p>The more engaging the conversation, the greater the chance your comments influence others. Top influencers give thoughtful and meaningful responses, creating a vibrant community of ideas and perspectives.</p>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <img src="https://clipart-library.com/image_gallery/57378.jpg" alt="Community Guidelines" class="grid-image">
+                <div class="grid-content">
+                    <h2>Community Guidelines</h2>
+                    <p>Our engine detects unkind behavior. Bad language and hate speech are not allowed. Users who act undesirably may be banned, and their history removed to maintain a respectful environment.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
